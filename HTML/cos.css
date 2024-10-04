@@ -1,0 +1,225 @@
+header {
+    background-color: #565660; 
+    padding: 20px;
+    color: #fff; 
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #313030;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: rgb(186, 186, 186); 
+    text-decoration: none; 
+    display: block;
+    padding: 10px;
+}
+.dropdown-content a:hover {
+    border: 3px solid purple; 
+    padding: 9px; 
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: border-color 0.3s ease; 
+    padding: 0 5px;
+    border-bottom: 3px solid transparent; 
+}
+
+nav ul li a:hover {
+    border-bottom-color: purple; 
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    background: url("https://i.pinimg.com/564x/80/9f/13/809f1394166505a2f49ec90dccab1656.jpg") center/cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cart-container h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #565660;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.clear-cart {
+    background-color: #565660;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: transform 0.3s; 
+}
+
+.clear-cart:focus {
+    outline: none; 
+    animation: changeColor 3s forwards, changeTextColor 5s forwards; /* Adăugăm animațiile */
+}
+
+.clear-cart:hover {
+    transform: scale(1.05);
+}
+
+@keyframes changeColor {
+    from { background-color: #565660; }
+    to { background-color: purple; }
+}
+
+@keyframes changeTextColor {
+    from { color: white; }
+    to { color: yellow; }
+}
+
+#clear-cart {
+    background-color: gray;
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+
+#clear-cart:hover {
+    background-color: darkgray; 
+}
+
+
+#contact {
+    background: url("https://i.pinimg.com/564x/80/9f/13/809f1394166505a2f49ec90dccab1656.jpg") center/cover;
+    height: 200px;
+    padding: 20px;
+}
+
+#contact h2 {
+    color: #fbfbfb;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.cart-container {
+    background-color: #ffffff;
+    padding: 1em;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vote-container {
+    background-color: gray;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.vote-container h2 {
+    margin-bottom: 1em;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+    color: #ffffff;
+}
+
+input, select, button {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input, select {
+    background-color: black;
+    color: #ffffff;
+}
+
+button {
+    padding: 0.7em;
+    color: #ffffff;
+    background-color: #080410;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555068;
+}
+
+.error-message {
+    color: #ffcccc;
+    font-size: 0.9em;
+    display: none;
+}

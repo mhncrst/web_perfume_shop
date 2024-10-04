@@ -1,0 +1,163 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    background-color: #f4f4f4; 
+    color: #333; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;display: grid; 
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+header {
+    background-color: #565660; 
+    padding: 20px;
+    color: #fff; 
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #313030;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: rgb(186, 186, 186); 
+    text-decoration: none; 
+    display: block;
+    padding: 10px;
+}
+.dropdown-content a:hover {
+    border: 3px solid purple; 
+    padding: 9px; 
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: border-color 0.3s ease; 
+    padding: 0 5px;
+    border-bottom: 3px solid transparent; 
+}
+
+nav ul li a:hover {
+    border-bottom-color: purple; 
+}
+
+
+.brand {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brand h2 {
+    color: #565660; 
+}
+
+.brand img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+    width : 20px;
+    height : auto;
+}
+.brand img:hover {
+    border: 3px solid purple; 
+    padding: 9px; 
+}
+
+
+footer {
+    background-color: #565660; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.add-to-cart {
+    background-color: #565660;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: transform 0.3s; /* Tranziția pentru transformare */
+}
+
+.add-to-cart:focus {
+    outline: none; /* Eliminăm conturul standard la focus */
+    animation: changeColor 3s forwards, changeTextColor 5s forwards; /* Adăugăm animațiile */
+}
+
+.add-to-cart:hover {
+    transform: scale(1.05);
+}
+
+@keyframes changeColor {
+    from { background-color: #565660; }
+    to { background-color: purple; }
+}
+
+@keyframes changeTextColor {
+    from { color: white; }
+    to { color: yellow; }
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+.cart-icon img {
+    width: 24px; /* sau orice dimensiune dorești */
+    height: auto;
+    margin-left: 1rem;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cos de cumparaturi - Essence</title>
+    <link rel="stylesheet" href="cos.css">
+    <script src="cos.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="ciorna.html">Acasă</a></li>
+                <li class="dropdown">
+                    <a href="#">Brands</a>
+                    <ul class="dropdown-content">
+                        <li><a href="brand1.html">Orto Parisi</a></li>
+                        <li><a href="brand2.html">Nasomatto</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cos.html" class="cart-icon">Coșul dumneavoastră</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="cart-container">
+            <h2>Coșul dumneavoastră</h2>
+            <ul id="cart-items">
+                <!-- Produsele vor fi adăugate aici -->
+            </ul>
+            <p id="total-cost">Cost total: 0 RON</p>
+            <button id="clear-cart">Golește coșul</button>
+        </div>
+
+        <div class="vote-container">
+            <h2>Votați brandul preferat</h2>
+            <form id="vote-form">
+                <label for="brand">Alegeți brandul:</label>
+                <select id="brand" name="brand" required>
+                    <option value="">--Selectați un brand--</option>
+                    <option value="Orto Parisi">Orto Parisi</option>
+                    <option value="Nasomatto">Nasomatto</option>
+                </select>
+                <span id="brand-error" class="error-message"></span>
+
+                <button type="submit">Votează</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Număr de telefon: 0748159117</p>
+            <p>Adresă: Bd. Unirii nr. 13, București, Romania</p>
+            <p>Email: essence@gmail.com</p>
+        </section>
+        <p>&copy; 2024 Essence. Toate drepturile rezervate.</p>
+    </footer>
+
+    <script src="cos.js"></script>
+</body>
+</html>

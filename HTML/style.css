@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+   
+    background-image: url("https://i.pinimg.com/564x/80/9f/13/809f1394166505a2f49ec90dccab1656.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* #logo
+{
+    max-width: 50%;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    animation: rotatie 10s linear infinite; 
+}
+
+@keyframes rotatie
+{
+    from {
+        transform: rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg);
+    } */
+/* } */
+
+header {
+    background-color: #565660;
+    padding: 20px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #313030;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: rgb(186, 186, 186); 
+    text-decoration: none; 
+    display: block;
+    padding: 10px;
+}
+.dropdown-content a:hover {
+    border: 3px solid purple; 
+    padding: 9px; 
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: border-color 0.3s ease; 
+    padding: 0 5px;
+    border-bottom: 3px solid transparent; 
+}
+
+nav ul li a:hover {
+    border-bottom-color: purple; 
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand {
+    margin-bottom: 20px;
+    text-align: center; 
+    flex: 1;
+    padding: 20px;
+    
+}
+.brand h2{
+    color:#fbfbfb;
+}
+
+.brand p {
+    color : whitesmoke;
+    display: inline-block; 
+    vertical-align: top; 
+    margin: 0
+}
+
+.brand img {
+    display: block;
+    margin : 0 auto;
+}
+.brand img {
+    display: block;
+    margin : 0 auto;
+    border: 5px solid transparent; 
+    transition: border-color 0.3s ease; 
+}
+
+.brand img:hover {
+    border-color: rgb(41, 11, 34); 
+}
+
+
+footer {
+    background-color: #565660;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact {
+    background-image: url("https://i.pinimg.com/564x/80/9f/13/809f1394166505a2f49ec90dccab1656.jpg");
+    background-size: cover;
+    height: 200px; 
+    width: 100%;
+    padding: 20px;
+}
+
+#contact h2 {
+    color: #fbfbfb;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+.cart-icon img {
+    width: 24px; /* sau orice dimensiune dorești */
+    height: auto;
+    margin-left: 1rem;
+}
